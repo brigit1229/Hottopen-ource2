@@ -1,0 +1,68 @@
+/* 전체 배경 적용 */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("배경.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Pretendard", sans-serif;
+}
+
+/* 전체 컨테이너: 왼쪽 위 정렬 */
+.container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* 각 노래 카드 */
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 이미지 크기 통일 */
+.song-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* 호버 시 확대 */
+.song-img:hover {
+    transform: scale(1.05);
+}
+
+/* 텍스트 영역 */
+.song-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* 글씨 뒤 흰색 박스 */
+    background-color: rgba(255, 255, 255, 0.9); /* 흰색 + 약간 투명 */
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* 제목 */
+.title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/* 설명 */
+.desc {
+    margin-top: 8px;
+    font-size: 15px;
+    color: black;
+}
